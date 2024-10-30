@@ -1,0 +1,225 @@
+<!Doctype html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <title>Featured books Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header1">
+            <a href="..\homepage\home.html" class="logo">
+                <h2 class="bioinfo">GeneLit</h2>
+            </a>
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search bioinfo books..." id="search-box">
+                <label for="search-box" class="bioinfo-search"><ion-icon name="search"></ion-icon></label>
+            </form>
+            <div class="icons">
+                <div class="bio-in"><ion-icon name="search"></ion-icon></div>
+                <a href="wishlist.html" class="like"><ion-icon name="heart"></ion-icon></a>
+                <a href="cart.html" class="cart"><ion-icon name="cart"></ion-icon></a>
+                <div></div>
+            </div>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="..\homepage\home.html">Home</a>
+                <a href="..\Aboutpage\about.html">about Bioinformatics</a>
+                <a href="../Featured/feature.html">Featured books</a>
+                <a href="..\ContactPage\contact.html">Contact us</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="feature" id="featured">
+        <h1 class="heading"><span>Recommended Books</span></h1>
+        <div class="featured-slider">
+            <button class="prev" onclick="scrollImages(-1)">Prev</button>
+            <div class="slides">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><ion-icon name="search"></ion-icon></a>
+                        <a href="wishlist.html"
+                            onclick="addItemToWishlist('Bioinformatics: Sequence and Genome Analysis', '₹500', '../homepage/books_img/david.jpg')">
+                            <ion-icon name="heart"></ion-icon>
+                        </a>
+
+                        <a href="#"><ion-icon name="eye"></ion-icon></a>
+                    </div>
+                    <div class="image">
+                        <img src="../homepage/books_img/david.jpg" alt="img1">
+                    </div>
+                    <div class="content">
+                        <h3>Bioinformatics: Sequence and Genome Analysis" by David W. Mount</h3>
+                        <div class="price">₹500 <span>₹1000</span></div>
+                        <a href="#" class="btn"
+                            onclick="addToCart('Bioinformatics: Sequence and Genome Analysis by David W. Mount', 500)">Add
+                            to Cart</a>
+                    </div>
+                </div>
+
+
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><ion-icon name="search"></ion-icon></a>
+                        <a href="wishlist.html"
+                        onclick="addItemToWishlist('Biological Sequence Analysis: Probabilistic Models of Proteins and Nucleic Acids by Richard Durbin et al.', '₹500', '../homepage/books_img/durbin.jpg')">
+                        <ion-icon name="heart"></ion-icon>
+                        <a href="#"><ion-icon name="eye"></ion-icon></a>
+                    </div>
+                    <div class="image">
+                        <img src="../homepage/books_img/durbin.jpg" alt="img1">
+                    </div>
+                    <div class="content">
+                        <h3>Biological Sequence Analysis: Probabilistic Models of Proteins and Nucleic Acids" by Richard
+                            Durbin et al. </h3>
+                        <div class="price">₹600 <span>₹1200</span></div>
+                        <!-- Inside each .box div -->
+                        <a href="#" class="btn"
+                            onclick="addToCart('Biological Sequence Analysis: Probabilistic Models of Proteins and Nucleic Acids by Richard Durbin et al.', 600)">Add
+                            to Cart</a>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><ion-icon name="search"></ion-icon></a>
+                        <a href="wishlist.html"
+                        onclick="addItemToWishlist('Bioinformatics and Functional Genomics by Jonathan Pevsner', '₹200', '../homepage/books_img/jonathan.jpg')">
+                        <ion-icon name="heart"></ion-icon>
+                    </a>
+                        <a href="#"><ion-icon name="eye"></ion-icon></a>
+                    </div>
+                    <div class="image">
+                        <img src="../homepage/books_img/jonathan.jpg" alt="img1">
+                    </div>
+                    <div class="content">
+                        <h3>Bioinformatics and Functional Genomics" by Jonathan Pevsner</h3>
+                        <div class="price">₹200 <span>₹400</span></div>
+                        <a href="#" class="btn"
+                            onclick="addToCart('Bioinformatics and Functional Genomics by Jonathan Pevsner', 200)">Add
+                            to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><ion-icon name="search"></ion-icon></a>
+                        <a href="wishlist.html"
+                        onclick="addItemToWishlist('Bioinformatics Data Skills: Reproducible and Robust Research with Open Source Tools by Vince Buffalo', '₹500', '../homepage/books_img/Vince.jpg)">
+                        <ion-icon name="heart"></ion-icon>
+                    </a>
+                        <a href="#"><ion-icon name="eye"></ion-icon></a>
+                    </div>
+                    <div class="image">
+                        <img src="../homepage/books_img/Vince.jpg" alt="img1">
+                    </div>
+                    <div class="content">
+                        <h3>Bioinformatics Data Skills: Reproducible and Robust Research with Open Source Tools" by
+                            Vince Buffalo</h3>
+                        <div class="price">₹500 <span>₹1000</span></div>
+                        <a href="#" class="btn"
+                            onclick="addToCart('Bioinformatics Data Skills: Reproducible and Robust Research with Open Source Tools by Vince Buffalo', 500)">Add
+                            to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><ion-icon name="search"></ion-icon></a>
+                        <a href="wishlist.html"
+                        onclick="addItemToWishlist('Introduction to Computational Biology: Maps, Sequences and Genomes by Michael S. Waterman', '450', '../homepage/books_img/waterman.jpg')">
+                        <ion-icon name="heart"></ion-icon></a>
+
+                        <a href="#"><ion-icon name="eye"></ion-icon></a>
+                    </div>
+                    <div class="image">
+                        <img src="../homepage/books_img/waterman.jpg" alt="img1">
+                    </div>
+                    <div class="content">
+                        <h3>Introduction to Computational Biology: Maps, Sequences and Genomes" by Michael S. Waterman
+                        </h3>
+                        <div class="price">₹450 <span>₹900</span></div>
+                        <a href="#" class="btn"
+                            onclick="addToCart('Introduction to Computational Biology: Maps, Sequences and Genomes by Michael S. Waterman', 450)">Add
+                            to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#"><ion-icon name="search"></ion-icon></a>
+                        <a href="wishlist.html"
+                        onclick="addItemToWishlist('Essential Bioinformatics by Jin Xiong', '₹1000', '../homepage/books_img/xong.jpg')">
+                        <ion-icon name="heart"></ion-icon>
+                        <a href="#"><ion-icon name="eye"></ion-icon></a>
+                    </div>
+                    <div class="image">
+                        <img src="../homepage/books_img/xong.jpg" alt="img1">
+                    </div>
+                    <div class="content">
+                        <h3>Essential Bioinformatics" by Jin Xiong</h3>
+                        <div class="price">₹1000 <span>₹2000</span></div>
+                        <a href="#" class="btn" onclick="addToCart('Essential Bioinformatics by Jin Xiong', 1000)">Add
+                            to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="scrollImages(1)">Next</button>
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our Locations in India </h3>
+                <a href="#"><i><ion-icon name="locate"></ion-icon></i> chandigarh</a>
+                <a href="#"><i><ion-icon name="locate"></ion-icon></i> Himachal Pradesh</a>
+                <a href="#"><i><ion-icon name="locate"></ion-icon></i> delhi</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links </h3>
+                <a href="..\homepage\home.html"><i><ion-icon name="arrow-round-forward"></i></ion-icon> Home</a>
+                <a href="..\Aboutpage\about.html"><i><ion-icon name="arrow-round-forward"></i></ion-icon> About
+                    Bioinformatics</a>
+                <a href="../Featured/feature.html"><i><ion-icon name="arrow-round-forward"></i></ion-icon> Featured
+                    books</a>
+                <a href="..\ContactPage\contact.html"><i><ion-icon name="arrow-round-forward"></i></ion-icon> Contact
+                    Us</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i><ion-icon name="call"></ion-icon></i>+91 1234567890</a>
+                <a href="#"><i><ion-icon name="call"></ion-icon></i>+91 0987654321</a>
+                <a href="#"><i><ion-icon name="mail"
+                            style="font-family: Arial, Helvetica, sans-serif;"></ion-icon></i>genelit@gmail.com</a>
+                <!-- <img class="map" src="../homepage/books_img/map.png" height="300px" alt="map"> -->
+            </div>
+        </div>
+        <div class="share">
+            <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="../image/harshill777_qr.png"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/harshil-walia-225964266" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <div class="credits"> created by <span>Harshil Walia</span> | &copy; all rights are reserved!</div>
+    </section>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="wishlist.js"></script>
+</body>
+
+</html>

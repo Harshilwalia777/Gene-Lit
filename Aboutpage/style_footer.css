@@ -1,0 +1,59 @@
+.footer .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        gap: 1.5rem;
+}
+.footer .box-container .box h3{
+   font-size: 2.2rem;
+   color: black;
+   padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+   display: block;
+   font-size: 1.8rem;
+   color: darkcyan;
+   padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    color: blue;
+    padding: .5rem;
+}
+ 
+.footer .box-container .box a:hover i{
+    padding: 2rem;
+}
+.footer .box-container .box .map{
+    width: 50%;
+} 
+.footer .share{
+    padding: 1rem 0;
+    text-align: center;
+}
+.footer .share a{
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    line-height: 5rem;
+    font-size: 5rem;
+    color: #fff;
+    background: green;
+    margin: 0 .9rem;
+    border-radius: 10%;
+}
+.footer .share a:hover{
+    background: black;
+}
+.footer .credits{
+    border-top: .3rem solid rgba(0,0,0,.1);
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: rgb(86, 6, 117);
+    text-align: center;
+}
+.footer .credits span{
+    color: blue;
+}
