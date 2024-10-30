@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Login Page</title>
+</head>
+
+<body>
+	<header>
+		<h2 class=logo>GeneLit</h2>
+		<nav class=navigation>
+			<a href="#">Help</a>
+			<a href="#">Feedback Form</a>
+			<a href="..\ContactPage\gitcontact.html">Contact us</a>
+			<button class=btn-Login>Login</button>
+		</nav>
+	</header>
+
+	<div class=wrapper>
+		<span class="icon-close"><ion-icon name="close"></ion-icon></span>
+		<div class="form-box login">
+			<h2>Login</h2>
+			<form action="#">
+				<div class=input-box>
+					<span class="icon"><ion-icon name="person"></ion-icon></span>
+					<input type="username" id="un" required>
+					<label>Username</label>
+				</div>
+				<div class=input-box>
+					<span class=icon><ion-icon name="lock"></ion-icon></span>
+					<input type="password" id="pw" required>
+					<label>Password</label>
+
+				</div>
+				<button type="button" onclick="login()" class=btn>Login</button>
+				<div class="login-register">
+					<p>don't have an account? <a href="#" class="register-link">Register Here</a></p>
+				</div>
+			</form>
+		</div>
+		<div class="form-box register">
+			<h2>Registration</h2>
+			<form action="#">
+				<div class=input-box>
+					<span class="icon"><ion-icon name="person"></ion-icon></span>
+					<input type="username" id="person" required>
+					<label>Username</label>
+				</div>
+				<div class=input-box>
+					<span class="icon"><ion-icon name="mail"></ion-icon></span>
+					<input type="email" required>
+					<label>Email</label>
+				</div>
+				<div class=input-box>
+					<span class=icon><ion-icon name="lock"></ion-icon></span>
+					<input type="password" id="wa" required>
+					<label>Password</label>
+				</div>
+				<div class="agree">
+					<label><input type="checkbox">agree to the terms & conditions</label>
+				</div>
+				<button type="button" onclick="register()" class=btn>Register</button>
+				<div class="login-register">
+					<p>Alredy have an account? <a href="#" class="login-link">Login</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<script src="script.js"></script>
+	<script src="login_creds.js"></script>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
