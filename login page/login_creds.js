@@ -10,7 +10,7 @@ function login() {
     // Check if credentials are correct
     if (enteredUsername === validUsername && enteredPassword === validPassword) {
         // Redirect to homepage if successful
-        window.location.href = "g/homepage/home.html"; // Replace with your actual homepage URL
+        window.location.href = "/homepage/home.html"; // Replace with your actual homepage URL
     } else {
         // Display error message and clear password for retry
         alert("Incorrect username or password. Please try again.");
